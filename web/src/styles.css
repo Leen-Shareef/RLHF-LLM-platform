@@ -1,0 +1,34 @@
+:root { --bg:#fafafa; --card:#fff; --ink:#222; --muted:#687076; --border:#e6e6e6; --pill:#eef2f6; --warn:#fff4e5; }
+* { box-sizing:border-box; }
+html, body, #root { height:100%; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:var(--ink); background:var(--bg); }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 80px; }
+header { margin-bottom: 16px; }
+h1 { margin:0 0 4px; font-size: 28px; }
+.sub { color: var(--muted); font-size: 14px; }
+
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; margin: 12px 0; }
+.lbl { display:block; font-weight:600; margin-bottom:8px; }
+textarea { width:100%; min-height: 90px; padding:10px; border:1px solid var(--border); border-radius:10px; }
+input[type="text"] { width:100%; padding:10px; border:1px solid var(--border); border-radius:10px; }
+
+button { background:#0f67ff; color:#fff; border:none; padding:10px 14px; border-radius:10px; font-weight:600; cursor:pointer; }
+button[disabled] { opacity:0.6; cursor:not-allowed; }
+.bar { display:flex; gap:12px; align-items:center; font-size:14px; padding:10px 12px; background:var(--card); border:1px solid var(--border); border-radius:12px; margin: 12px 0; }
+.bar .spacer { flex:1; }
+code { background:var(--pill); padding:2px 6px; border-radius:6px; }
+
+.list { display:flex; flex-direction:column; gap:12px; margin-top:8px; }
+.turn { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px; }
+.turn-header { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+.pill { background:var(--pill); padding:4px 8px; border-radius:999px; font-size:12px; }
+.pill.warning { background:var(--warn); }
+.user { color:var(--muted); font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+.cols { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+.col { border:1px dashed var(--border); border-radius:10px; padding:10px; min-height: 90px; }
+.col-title { font-weight:700; margin-bottom:6px; }
+.col-title.strong { color:#0a5; }
+.answer { white-space:pre-wrap; }
+.meta { margin-top:8px; font-size:12px; color:var(--muted); }

@@ -1,0 +1,10 @@
+# env & cache
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.env.*
+# logs
+data/*.jsonl
+data/*.csv
